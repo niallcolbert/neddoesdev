@@ -1,0 +1,18 @@
+{
+    "posts": [
+        {
+            "id": "learning-game-dev",
+            "date": "December 30, 2020",
+            "title": "Learning Game Dev",
+            "featured_image": "/static/img/gameDev1.png",
+            "embed_link": false
+        },
+        {
+            "id": "intro",
+            "date": "December 30, 2020",
+            "title": "Intro",
+            "featured_image": "/static/img/nedDoesDev.png",
+            "embed_link": false
+        }
+    ]
+}
