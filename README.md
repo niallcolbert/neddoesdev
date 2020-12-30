@@ -1,6 +1,6 @@
-# niallcolbert_xyz
+# nedDoesDev
 
-> Niall Colbert Dev Blog
+> NedDoesDev
 
 ## Build Setup
 
