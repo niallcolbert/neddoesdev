@@ -1,6 +1,13 @@
 {
     "posts": [
         {
+            "id": "game-dev-1",
+            "date": "January 24, 2021",
+            "title": "Game Dev 1",
+            "featured_image": "/static/img/gameDev.png",
+            "embed_link": false
+        },
+        {
             "id": "learning-game-dev",
             "date": "December 30, 2020",
             "title": "Learning Game Dev",

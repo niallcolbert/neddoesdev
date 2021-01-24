@@ -1,0 +1,15 @@
+# [Game Dev 1]
+#### January 24, 2021
+
+I hadn't intended this post to be so far removed from the last. Due to an unforeseen illness I've been taking a break from dev work over that last few weeks, and with nothing to talk about I didn't have much reason to post. Thankfully though I'm beginning to feel much better this weekend so I took advantage of some spare time this evening to dip my toes back into the world of game development.
+
+My last post mentioned a game I was starting work on starring my loveable dog Loki, but the one hurdle I keep hitting is that I still don't know a whole lot about game development. Rather than power through in the dark on my pet project I thought I might find some tutorials and build an alternate smaller project to cut my teeth on. So "Castles & Casters" (working title) was born. Gameplay is inspired by CRPGs like Baldur's Gate, while visuals take on a similar low poly style as intended for "The Adventures of Loki".
+
+This isn't the first time I've started this project. The first attempt was in November and I'd gotten about 12-15 hours of work put in, when one day my data drive corrupted and I lost everything (a unity learning project least of all). Now for any engineer/developer/programmer out there I know exactly what you're thinking - why was there no git repo? And you're right. Typically on any project I start with a git repo, but I was lazy about it on this occasion. All eager to get started with the tutorials I thought “hey this is just a learning project, I don’t really need version control” - turns out I needed version control.
+
+Step one this time around, I set up version control. Castles & Casters now has a git repo, before I even set up the empty Unity project. With November’s rookie mistake rectified I got started with importing some assets I may want to use and setting up a sandbox to play in, building some terrain and starting to layout a little village. Unfortunately that’s about as far as this evening got, but it’s more time in the Unity engine and after a few weeks of not gaining any progress at all I’m happy to have something.
+
+## What’s to Come
+
+Thanks for checking out neddoes.dev, there’ll be much more to come, including more detailed dev updates than what I’ve included here today. Also my master’s degree is going to involve learning Android app development this coming semester and seeing my own app idea from conception to realisation, so I’m considering logging that process too. First I’ll need to figure out what that app idea will be. 
+
