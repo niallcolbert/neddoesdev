@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="headline"><span class="icon"><img src="static/img/nedDoesDev.png"></span>nedDoesDev</h1>
-    <router-link to="/about" tag="a" class="aboutLink">About &raquo;</router-link>
+    <router-link v-show="false" to="/about" tag="a" class="aboutLink">About &raquo;</router-link>
     <div class="group">
       <h2>[Recent]</h2>
       <div v-for="entry in recentEntries" :key="entry.id" 

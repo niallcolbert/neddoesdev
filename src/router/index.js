@@ -6,19 +6,11 @@ import Posts from '../assets/posts.json'
 
 Vue.use(Router)
 
-const blogRoutes = Object.keys(Posts).map(section => {
-  const children = Posts[section].map(child => ({
-    path: child.id,
-    name: child.id,
-    component: () => import(`../assets/${section}/${child.id}.md`)
-  }))
-  return {
-    path: `/${section}`,
-    name: section,
-    component: () => import('../views/Blog.vue'),
-    children
-  }
-})
+const children = Posts['posts'].map(child => ({
+  path: child.id,
+  name: child.id,
+  component: () => import(`../assets/posts/${child.id}.md`)
+}))
 
 export default new Router({
   mode: 'history',
@@ -34,6 +26,11 @@ export default new Router({
       name: 'about',
       component: About
     },
-    ...blogRoutes
+    {
+      path: '/posts',
+      name: 'posts',
+      component: () => import('../views/Blog.vue'),
+      children
+    }
   ]
 })
