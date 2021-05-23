@@ -1,6 +1,13 @@
 {
     "posts": [
         {
+            "id": "game-dev-2",
+            "date": "May 22, 2021",
+            "title": "Game Dev 2",
+            "featured_image": "/static/img/gameDev2.png",
+            "embed_link": false
+        },
+        {
             "id": "game-dev-1",
             "date": "January 24, 2021",
             "title": "Game Dev 1",
