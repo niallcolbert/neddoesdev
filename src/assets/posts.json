@@ -1,32 +1,39 @@
 {
     "posts": [
         {
-            "id": "game-dev-2",
-            "date": "May 22, 2021",
-            "title": "Game Dev 2",
-            "featured_image": "/static/img/gameDev2.png",
-            "embed_link": false
+            "id": "parenthood",
+            "title": "Parenthood",
+            "featured_image": "/static/img/playroom.jpg"
         },
         {
-            "id": "game-dev-1",
-            "date": "January 24, 2021",
-            "title": "Game Dev 1",
-            "featured_image": "/static/img/gameDev.png",
-            "embed_link": false
+            "id": "an-ode-to-the-number-40",
+            "title": "An ode to the No. 40 ",
+            "featured_image": "/static/img/bus.jpg"
         },
         {
-            "id": "learning-game-dev",
-            "date": "December 30, 2020",
-            "title": "Learning Game Dev",
-            "featured_image": "/static/img/gameDev1.png",
-            "embed_link": false
+            "id": "wrapped",
+            "title": "Wrapped",
+            "featured_image": "/static/img/headphones.jpg"
         },
         {
-            "id": "intro",
-            "date": "December 30, 2020",
-            "title": "Intro",
-            "featured_image": "/static/img/nedDoesDev.png",
-            "embed_link": false
+            "id": "echoes",
+            "title": "echoes",
+            "featured_image": "/static/img/echo.jpg"
+        },
+        {
+            "id": "solstice",
+            "title": "Solstice",
+            "featured_image": "/static/img/leaves.jpg"
+        },
+        {
+            "id": "office-haikus",
+            "title": "Office haikus",
+            "featured_image": "/static/img/office.jpg"
+        },
+        {
+            "id": "its-not-easy",
+            "title": "It's not easy ",
+            "featured_image": "/static/img/book.jpg"
         }
     ]
 }

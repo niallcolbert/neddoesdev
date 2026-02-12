@@ -1,22 +1,23 @@
 <template>
   <div class="home">
-    <h1 class="headline"><span class="icon"><img src="static/img/nedDoesDev.png"></span>nedDoesDev</h1>
-    <router-link v-show="false" to="/about" tag="a" class="aboutLink">About &raquo;</router-link>
+    <div class="headline">
+      <span class="icon"><img src="static/img/ned.jpg"></span>
+      <span class="headline-text"><h1>Ned Mahon</h1>
+      Waterford based writer, focused primarily on poetry and spoken word</span>
+      <router-link to="/about" tag="a" class="aboutLink standard-button">About me</router-link>
+      <a href="https://www.instagram.com/ned_mahon_poet/" class="instaLink standard-button">
+        <img src="static/img/insta.svg">
+      </a>
+    </div>
+    
     <div class="group">
-      <h2>[Recent]</h2>
-      <div v-for="entry in recentEntries" :key="entry.id" 
+      <h2>My work</h2>
+      <p>Here is a sample of my work, for more visit <a href="https://www.instagram.com/ned_mahon_poet/">ned_mahon_poet</a> on Instagram.</p>
+      <div v-for="entry in entries" :key="entry.id" 
         class="entry col-sm-12 col-md-6 col-lg-4" 
         @click="$router.push({name: entry.id})" 
         v-bind:style="{ backgroundImage: 'url(' + entry.featured_image + ')' }">
-        <h2 class="title">[{{entry.title}}]</h2>
-      </div>
-    </div>
-    <div class="group archive-list" v-if="olderEntries.length">
-      <h2>[Archive]</h2>
-      <div v-for="entry in olderEntries" :key="entry.id"
-        class="archive-item">
-        <h3 class="title" @click="$router.push({name: entry.id})">[{{entry.title}}]</h3>
-        <span>{{entry.date}}</span>
+        <h2 class="title">{{entry.title}}</h2>
       </div>
     </div>
   </div>
@@ -28,11 +29,8 @@ import Posts from '@/assets/posts.json'
 export default {
   name: 'home',
   computed: {
-    recentEntries () {
-      return Posts.posts.slice(0, 6)
-    },
-    olderEntries () {
-      return Posts.posts.slice(6)
+    entries () {
+      return Posts.posts
     }
   }
 }
@@ -43,29 +41,30 @@ export default {
   max-width: 90vw;
   margin: 3rem auto;
   .headline {
-    font-size: 4rem;
-    margin: 0 0 3rem 0;
-    width: auto;
-    display: inline-block;
-    line-height: 5rem;
-    text-transform: none;
+    .headline-text {
+      h1{
+        font-size: 4rem;
+      }
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
     .icon {
-      height: 5rem;
-      width: 5rem;
       overflow: hidden;
       display: inline-block;
       margin-right: 1rem;
       border-radius: 50%;
-      border: 2px solid #00ffde;
-      vertical-align: bottom;
+      vertical-align: middle;
       img {
         vertical-align: middle;
         border-style: none;
-        height: 6rem;
-        margin-left: -.5rem;
-        margin-top: -.2rem;
+        height: 15rem;
       }
     }
+  }
+
+  .group {
+    margin-top: 3rem;
   }
     
   .entry {
@@ -87,12 +86,14 @@ export default {
       position: absolute;
       background: #000C;
       width: 100%;
-      text-align: right;
+      height: 100%;
+      text-align: left;
       padding: 10px;
       margin: 0;
       bottom: 0;
       right: 0;
       font-size: 1.5rem;
+      vertical-align: bottom;
     }
     
     &:hover {    
@@ -100,20 +101,16 @@ export default {
     }
   }
 
-  .aboutLink {
-    background-color: #639;
-    color: white;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 1px solid currentColor;
-    border-radius: .5rem;
-    transition: all .3s ease;
-    display: inline-block;
+  .aboutLink, .instaLink {
     float: right;
-    &:hover {
-      background-color: transparent;
-      color: #639;
+  }
+  .instaLink {
+    margin-right: .5rem;
+    padding: 0;
+    background: none;
+    border: none;
+    img {
+      width: 3rem;
     }
   }
 
