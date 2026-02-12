@@ -4,7 +4,7 @@
       <span class="icon"><img src="static/img/ned.jpg"></span>
       <span class="headline-text"><h1>Ned Mahon</h1>
       Waterford based writer, focused primarily on poetry and spoken word</span>
-      <router-link to="/about" tag="a" class="aboutLink standard-button">About me</router-link>
+      <router-link to="/about" tag="a" class="aboutLink standard-button">About Ned</router-link>
       <a href="https://www.instagram.com/ned_mahon_poet/" class="instaLink standard-button">
         <img src="static/img/insta.svg">
       </a>
