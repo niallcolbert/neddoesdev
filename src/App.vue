@@ -3,6 +3,7 @@
     <div>
       <router-view/>
     </div>
+    <span>Copyright © 2026 nedmahon.com - All Rights Reserved.</span>
   </div>
 </template>
 <style lang="scss">
